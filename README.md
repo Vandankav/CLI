@@ -27,3 +27,11 @@ node analyzer.js --path <directory-to-scan> --top <number>
 
 Example :
 node analyzer.js --path C:\Users\kavav\AppData\Local --top 5
+
+### c. Design Decisions
+
+1. Implemented as a command-line tool for simplicity and ease of use.
+2. Used only Node.js standard libraries (fs, path) to comply with constraints.
+3. The tool performs read-only analysis to avoid accidental data loss.
+4. Folder classification and risk levels are based on common system and developer knowledge rather than destructive assumptions.
+5. The final decision is left to the user, making the tool safe and informative.
